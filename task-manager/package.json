@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "dev":  "cross-env NODE_OPTIONS='--inspect' nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "mongoose": "^8.2.4"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.7"
   }
 }
