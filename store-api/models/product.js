@@ -11,7 +11,11 @@ const productSchema = new mongoose.Schema({
   },
   featured: {
     type: Boolean,
-    default: 4.5,
+    default: false,
+  },
+  rating: {
+    type: Number,
+    default: 4.5
   },
   createdAt: {
     type: Date,
@@ -27,4 +31,4 @@ const productSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("product", productSchema);
+module.exports = mongoose.model("Product", productSchema);
